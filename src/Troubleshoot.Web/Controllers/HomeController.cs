@@ -13,17 +13,23 @@ namespace Troubleshoot.Web.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Leak()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Locking()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult Catastrophic()
+        {
+            return View();
+        }
+
+        public ActionResult Wrong()
+        {
             return View();
         }
     }
