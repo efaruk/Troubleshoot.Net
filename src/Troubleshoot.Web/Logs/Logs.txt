@@ -68,3 +68,5 @@ DEBUG 2016-05-11 15:41:47,045 [9    ] ubleshoot.Web.Controllers.HomeController -
 WARN  2016-05-11 15:41:47,172 [9    ] ubleshoot.Web.Controllers.HomeController - This is a warning message!
 DEBUG 2016-05-11 15:43:53,531 [9    ] ubleshoot.Web.Controllers.HomeController - Home page viewed.
 WARN  2016-05-11 15:43:53,534 [9    ] ubleshoot.Web.Controllers.HomeController - This is a warning message!
+DEBUG 2016-05-11 16:36:37,574 [8    ] ubleshoot.Web.Controllers.HomeController - Home page viewed.
+WARN  2016-05-11 16:36:37,834 [8    ] ubleshoot.Web.Controllers.HomeController - This is a warning message!
