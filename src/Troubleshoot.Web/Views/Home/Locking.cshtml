@@ -1,6 +1,8 @@
-﻿@{
+﻿@model Troubleshoot.Web.Models.LockingModel
+@{
     ViewBag.Title = "Concurrency & Locking";
 }
 <h2>@ViewBag.Title.</h2>
 
-<p>Use this area to provide additional information.</p>
+<p>Response Takes @Html.DisplayFor(model =>  model.TimeElapsedMilisecond) ms</p>
+<p>Request Count: @Html.DisplayFor(model => model.RequestCount)</p>

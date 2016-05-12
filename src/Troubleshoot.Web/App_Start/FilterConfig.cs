@@ -7,7 +7,9 @@ namespace Troubleshoot.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
+            filters.Add(new MetricMeasurementAttribute());
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new RequestCounterAttribute());
         }
     }
 }

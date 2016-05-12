@@ -1,6 +1,9 @@
-﻿@{
+﻿@model Troubleshoot.Web.Models.LeakModel
+@{
     ViewBag.Title = "Memory Leak";
 }
 <h2>@ViewBag.Title.</h2>
 
-<p>Use this area to provide additional information.</p>
+<p>Response Takes @Html.DisplayFor(model => model.TimeElapsedMilisecond) ms</p>
+<p>Total Bytes: @Html.DisplayFor(model => model.TotalBytes) byte</p>
+

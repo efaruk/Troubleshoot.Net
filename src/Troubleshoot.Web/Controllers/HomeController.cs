@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using log4net;
+using Troubleshoot.Common;
+using Troubleshoot.Web.Models;
 
 namespace Troubleshoot.Web.Controllers
 {
@@ -21,22 +23,32 @@ namespace Troubleshoot.Web.Controllers
 
         public ActionResult Leak()
         {
-            return View();
+            var model = new LeakModel();
+            model.TotalBytes = Trouble.MemoryLeak();
+            return View(model);
         }
 
         public ActionResult Locking()
         {
-            return View();
+            var model = new LockingModel()
+            {
+                RequestCount = Trouble.GetRequestCount()
+            };
+            return View(model);
         }
 
         public ActionResult Catastrophic()
         {
+            Trouble.CrashStackoverflow(7);
             return View();
         }
 
         public ActionResult Wrong()
         {
+            Trouble.WrangCall();
             return View();
         }
+
+        
     }
 }

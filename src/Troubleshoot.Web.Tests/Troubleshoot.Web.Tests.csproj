@@ -97,6 +97,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Troubleshoot.Common\Troubleshoot.Common.csproj">
+      <Project>{0e156b5c-dd4c-497c-9286-c5b64dc83a67}</Project>
+      <Name>Troubleshoot.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Troubleshoot.Web\Troubleshoot.Web.csproj">
       <Project>{887D4D44-4D4F-48E9-A797-4A33AA23CBDA}</Project>
       <Name>Troubleshoot.Web</Name>
