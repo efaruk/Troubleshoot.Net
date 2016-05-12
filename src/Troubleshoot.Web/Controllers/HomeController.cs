@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using log4net;
 using Troubleshoot.Common;
+using Troubleshoot.Common.Entity;
 using Troubleshoot.Web.Models;
 
 namespace Troubleshoot.Web.Controllers
@@ -49,6 +50,14 @@ namespace Troubleshoot.Web.Controllers
             return View();
         }
 
-        
+        public ActionResult Generate()
+        {
+            var business = new Business();
+            business.GenerateProduct(100000);
+            return View();
+        }
+
+       
+
     }
 }
