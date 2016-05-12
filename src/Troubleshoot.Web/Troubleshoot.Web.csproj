@@ -252,9 +252,6 @@
     <Content Include="App_Data\Site.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-        <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Properties\PublishProfiles\troubleshoot-net.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
@@ -307,7 +304,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-      <WCFMetadata Include="Service References\" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
